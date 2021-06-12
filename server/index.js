@@ -11,8 +11,10 @@ app.use(cors());
 //routes
 
 //register and login routes
-
 app.use("/auth", require("./routes/jwtAuth"));
+
+//dashboard route
+app.use("/dashboard", require("./routes/dashboard"));
 
 const port = process.env.PORT || 5001;
 
